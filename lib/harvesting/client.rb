@@ -70,6 +70,11 @@ module Harvesting
       Harvesting::Models::Expenses.new(get("expenses", opts), opts, client: self)
     end
 
+    # @return [Harvesting::Models::ExpenseCategories]
+    def expense_categories(opts = {})
+      Harvesting::Models::ExpenseCategories.new(get("expense_categories", opts), opts, client: self)
+    end
+
     # @return [Array<Harvesting::Models::Invoice>]
     def invoices
       get("invoices")["invoices"].map do |result|

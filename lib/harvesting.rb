@@ -15,6 +15,7 @@ require "harvesting/models/project_task_assignment"
 require "harvesting/models/invoice"
 require "harvesting/models/time_entry"
 require "harvesting/models/expense"
+require "harvesting/models/expense_category"
 # harvest record collections
 require "harvesting/models/tasks"
 require "harvesting/models/users"
@@ -24,6 +25,7 @@ require "harvesting/models/projects"
 require "harvesting/models/project_user_assignments"
 require "harvesting/models/project_task_assignments"
 require "harvesting/models/expenses"
+require "harvesting/models/expense_categories"
 # API client
 require "harvesting/client"
 
